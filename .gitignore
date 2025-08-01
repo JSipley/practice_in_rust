@@ -1,0 +1,27 @@
+# Rust build and temporary files
+
+/target/
+**/*.rs.bk
+**/*.swp
+**/*.swo
+Cargo.lock
+*.log
+
+# By default, Cargo.lock is ignored for libraries, but tracked for binaries.
+# Uncomment the next line if this is a library crate:
+# Cargo.lock
+
+# Ignore backup and temp files
+*.tmp
+*.bak
+*.old
+*.d
+
+# Ignore by IDEs/editors
+.idea/
+.vscode/
+*.code-workspace
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
