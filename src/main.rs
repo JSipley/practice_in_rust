@@ -1,3 +1,4 @@
+mod solns;
 fn main() {
-    println!("Hello, world!");
+    solns::pascals_triangle::run();
 }
