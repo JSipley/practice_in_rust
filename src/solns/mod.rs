@@ -2,3 +2,4 @@
 // main program.
 
 pub mod pascals_triangle;
+pub mod reverse_integer;

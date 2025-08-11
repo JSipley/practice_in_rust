@@ -1,4 +1,4 @@
 mod solns;
 fn main() {
-    solns::pascals_triangle::run();
+    solns::reverse_integer::run();
 }
