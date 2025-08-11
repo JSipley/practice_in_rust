@@ -4,14 +4,16 @@ pub fn reverse(x: i32) -> i32
     let mut result: i32 = 0;
     let mut num = x;
     while num != 0 {
-        let digit = num % 10;
         if let Some(new_result) = result.checked_mul(10)
-                                             .and_then(|r| r.checked_add(digit)) {
+                                             .and_then(|r| r.checked_add(num % 10)) 
+        {
             result = new_result;
-        } else {
+            num /= 10;
+        } 
+        else 
+        {
             return 0;
         }
-        num /= 10;
     }
     result
 }
